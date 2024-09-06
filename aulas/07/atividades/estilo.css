@@ -1,0 +1,15 @@
+h1/*seletor ou selector*/{
+    color/*propriedades*/: blue/*valor*/;
+    background-color/*propriedades*/: rgb(111, 127, 138)/*valor*/;
+    text-align/*propriedades*/: center/*valor*/;
+}
+li/*seletor ou selector*/{
+    color/*propriedades*/: blue/*valor*/;
+}
+p /*seletor ou selector*/{
+    color/*propriedades*/: green/*valor*/;
+    font-size/*propriedades*/: 10px;
+}
+pre /*seletor ou selector*/{
+    background-color/*propriedades*/: rgb(211, 211, 211)/*valor*/;
+}
