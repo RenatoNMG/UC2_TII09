@@ -1,0 +1,51 @@
+/* estilos para header e navegação */
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+/* estilos de conteudo principal */
+
+main{
+  
+    margin: 15px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+section{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* estilos para conteudo complementar */
+
+aside{
+    background-color: #e9ecef;
+    padding: 15px;
+    border-left: 5px solid #444;
+    
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

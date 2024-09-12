@@ -13,3 +13,7 @@ p /*seletor ou selector*/{
 pre /*seletor ou selector*/{
     background-color/*propriedades*/: rgb(211, 211, 211)/*valor*/;
 }
+ol ul li{
+    color: black;
+    list-style-type: disc;
+}
