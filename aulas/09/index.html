@@ -32,7 +32,7 @@
 
             <h2>Introdução À tag &lt;img&gt;</h2>
 
-            <p> A tag img em HTML é usada para incorporar
+            <p> A tag img &ltimg&gtem HTML é usada para incorporar
                 páginas web. ela é um elementpo vazio,
                 ou seja não possui uma tag de fechamento o
                 contem apenas atributos que defines o conteudo visual</p>
@@ -41,28 +41,76 @@
             <h3>Atributos principais</h3>
 
             <ul>
-                <li>src (source): define o caminho da
-                    imagem que será exibida pode ser uma
-                    URL externa ou um caminho relativo dentro
-                    do servidor.
+                <li>
+                    <em>src (source)</em>: define o caminho da imagem que será exibigda.
+                    Pode ser uma URL externa ou um caminho relativo dentro do servidor.
+                    <div class="card">
+                        <h4>Exemplo 1:</h4>
+                        <pre><code>&ltimg src="image1.jpg"&gt</code></pre>
+                        <p>Resultado:</p>
+                        <img src="image1.jpg" style="width: 100%;">
+                    </div>
+                </li>
+                <li>
+                    <em>Alt (alternative text)</em>: fornece um texto alternativo para ser exibido caso a imagem
+                    não possa ser carregada. Ele também melhora a acessibilidade para leitores de tela.
 
                     <div class="card">
 
+                        <h4>Exemplo 2</h4>
+                        <pre><code>&ltimg src="imagegif.gif" alt="Gato gif" style="width: 100%"&gt</code></pre>
+                        <P>Resultado</P>
+                        <img src="imagegif.gif" alt="Gato gif" style="width: 100%">
 
-                        <h4>
-                            Exemplo 1
-                            pre><code>CÓDIGO VAI AQUI</code></pre>
-                            <p>Resultado</p>
-                            <img src="image1.jpg" alt="Planeta Terra" style="width: 100%;">
-                        </h4>
+                    </div>
+
+                </li>
+                <li>
+                    <em>src</em> Tambem: pode ser de um link externo
+                    <div class="card">
+
+                        <h4>Exemplo 3:</h4>
+                        <pre><code>&ltimg src="https://http.cat/images/425.jpg" alt="" style="width: 100%&gt;</code></pre>
+                        <P>Resultado</P>
+                        <img src="https://http.cat/images/425.jpg" alt=" style="width: 100%;>
+
                     </div>
                 </li>
-
             </ul>
 
 
 
         </section>
+
+        <aside>
+            <h3>Tipos comuns de imagens</h3>
+            <p>Os formatos de imagens mais utiliazasos na web são </p>
+            <ul>
+                <li><strong>(.jpg ou .jpeg)</strong>
+                Formayo utilizado amplamente para fotografia 
+                e imagens com muitos detalhes e cores. 
+                possui compressão com perda de qualidad 
+                (Lossy).
+
+                </li>
+
+
+                <li>
+                    <strong>(.png)</strong>
+                    Usdo par imagens com fundo trasparente ou
+                     que necessita de alta qualidade,sem perda de detalhes.
+                      utiliza compressão sem perda (lossless)
+                </li>
+                <li>
+                    <strong>GIF (.gif)</strong>
+                    Formato ideal para imagens animadas e pequenos ícones. Suporta transparência,
+                    mas tem um número limitdo de cores.
+                </li>
+            </ul>
+           
+
+
+        </aside>
     </main>
     <!-- Conteúdo Complementar -->
 
