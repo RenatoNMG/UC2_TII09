@@ -14,34 +14,47 @@
            
         }
         .grid-containder{
+        
+          
             display: grid;
             grid-template-columns: 200px 1fr 200px;
-            grid-template-rows: 100px 1fr 100px;
+            grid-template-rows: 100px 1fr 0,5fr 0,5fr 100px;
+            grid-template-areas: 
+            "header header header" 
+            "nav main aside"
+            "nav main anuncio"
+            "footer footer footer"
+            ;
             height: 100vh;
             gap: 10px;
         }
         header{
-            grid-column: 1 / 4;
-            background-color: lightblue;
+            grid-area: header;
+            background-color: rgb(137, 171, 182);
             
         }
         nav{
-            grid-column: 1 / 2;
+            grid-area: nav;
             background-color: lightgreen;
         }
         main{
-            grid-column: 2/3;;
+            grid-area: main;
             background-color: lightcoral;
         }
         aside{
-            grid-column: 3/4;
+            grid-area: aside;
             background-color: lightgoldenrodyellow;
         }
+
+        .anuncio{
+            grid-area: anuncio;
+            background-color: darkmagenta;
+        }
         footer{
-            grid-column: 1/4;
+            grid-area: footer;
             background-color: lightgray;
         }
-        @media( max-width: 700px) {
+        @media( max-width: 400px) {
             .grid-containder {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
@@ -61,6 +74,7 @@
         <nav>menu</nav>
         <main>Content</main>
         <aside>Sidebar</aside>
+        <div class="anuncio">anuncio</div>
         <footer>Footer</footer>
         
     </div>

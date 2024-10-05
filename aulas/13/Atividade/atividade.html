@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Atividade</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr 1fr;
+            grid-template-rows: 50px 1fr 1fr 100px;
+            grid-template-areas: 
+                "navbar navbar navbar navbar"
+                "sidebar main main main"
+                "sidebar section1 section2 section2"
+                "sidebar footer footer footer"
+            ;
+            height: 100vh;
+            gap: 10px;
+            
+        }
+
+        .elemento {
+            grid-area: navbar;
+            background-color: cornflowerblue;  
+            
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: cornflowerblue;
+        }
+        main{
+            grid-area: main;
+            background-color: cornflowerblue
+        }
+        .section1{
+            grid-area: section1;
+            background-color: cornflowerblue;
+        }
+        .section2{
+            grid-area: section2;
+            background-color: cornflowerblue;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: cornflowerblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+   <div class="grid-container">
+    <div class="elemento">Navbar</div>
+    <div class="sidebar">Sidebar</div>
+    <main class="main">Main</main>
+    <div class="section1">Section1</div>
+    <div class="section2" >Section2</div>
+    <div class="footer">Footer</div>   
+        
+   </div>
+</body>
+</html>
