@@ -109,4 +109,11 @@ table{
         display: grid;
         grid-template-columns: 1fr;
     }
+
+}
+@media(max-width: 300px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
